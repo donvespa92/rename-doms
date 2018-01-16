@@ -1,0 +1,99 @@
+# State file created:  2017/08/18 16:01:13
+# Build 17.2 2016.07.18-09.49-136426
+
+FLOW: Flow Analysis 1
+  DOMAIN: Domain 1
+    Coord Frame = Coord 0
+    Domain Type = Fluid
+    Location = \
+      fld_gas,sld_air_00,sld_air_01,sld_air_02,sld_air_03,sld_air_04,sld_air_0\
+      5,sld_air_06,sld_air_07,sld_air_08,sld_air_sensor_cover_1,sld_air_sensor\
+      _cover_2,sld_air_sensor_cover_3,sld_air_sensor_cover_4,sld_bearing_ball_\
+      1 440,sld_bearing_ball_10 458,sld_bearing_ball_11 \
+      439,sld_bearing_ball_12 455,sld_bearing_ball_13 459,sld_bearing_ball_14 \
+      454,sld_bearing_ball_2 471,sld_bearing_ball_3 436,sld_bearing_ball_4 \
+      451,sld_bearing_ball_5 462,sld_bearing_ball_6 437,sld_bearing_ball_7 \
+      461,sld_bearing_ball_8 469,sld_bearing_ball_9 457,sld_bearing_housing \
+      423,sld_bracket_1 407,sld_bracket_2 402,sld_bracket_flange \
+      418,sld_bushing_1 435,sld_bushing_2 452,sld_cap 449,sld_cap_bushing \
+      403,sld_dc_motor_1,sld_dc_motor_2,sld_dc_motor_3,sld_gas_1 \
+      422,sld_housing_actuator 406,sld_housing_tube_machined \
+      416,sld_insulation_glimmer_bottom 404,sld_insulation_glimmer_top \
+      397,sld_insulation_steel 393,sld_lever_1 432,sld_lever_2 426,sld_nut_1 \
+      447,sld_nut_2 425,sld_nut_3 453,sld_pin_gas_1 472,sld_pin_gas_2 \
+      470,sld_retainer 424,sld_retainer_bushing_1 433,sld_retainer_bushing_2 \
+      438,sld_retainer_spring 421,sld_rolled_bushing_ptfe \
+      431,sld_rolled_bushing_steel \
+      420,sld_screw_1,sld_screw_2,sld_screw_3,sld_sealing_fkm \
+      405,sld_sealing_steel 419,sld_sensor_cover 396,sld_shaft \
+      414,sld_shaft_output 394,sld_spring 429,sld_valve_plate 412,sld_washer \
+      413,sld_washer_scraper 410
+    BOUNDARY: Domain 1 Default
+      Boundary Type = WALL
+      Location = Primitive 2D AB,Primitive 2D AC,Primitive 2D AD,Primitive 2D \
+        AE,Primitive 2D BQ,Primitive 2D BR,Primitive 2D E,Primitive 2D \
+        F,Primitive 2D G,Primitive 2D H,Primitive 2D I,Primitive 2D \
+        J,Primitive 2D K,Primitive 2D L,Primitive 2D \
+        M,ffif_inlet_gas,ffif_outlet_gas,sld_bracket_1,sld_bracket_flange \
+        359,sld_cap 361,sld_housing_actuator 373,sld_housing_tube_machined \
+        322,sld_housing_tube_machined 323,sld_housing_tube_machined \
+        324,sld_insulation_glimmer_top,sld_insulation_steel,sld_nut_1,sld_nut_\
+        2,sld_nut_3,sld_pin_gas_1 \
+        343,sld_retainer_bushing_2,srf_sensor_cover_cap \
+        1,srf_sensor_cover_cap 16,srf_sensor_cover_cap \
+        17,srf_sensor_cover_cap 18,srf_sensor_cover_cap \
+        19,wl_housing_actuator_htc25
+      BOUNDARY CONDITIONS:
+        MASS AND MOMENTUM:
+          Option = No Slip Wall
+        END
+        WALL ROUGHNESS:
+          Option = Smooth Wall
+        END
+      END
+    END
+    DOMAIN MODELS:
+      BUOYANCY MODEL:
+        Option = Non Buoyant
+      END
+      DOMAIN MOTION:
+        Option = Stationary
+      END
+      MESH DEFORMATION:
+        Option = None
+      END
+      REFERENCE PRESSURE:
+        Reference Pressure = 1 [atm]
+      END
+    END
+    FLUID DEFINITION: Fluid 1
+      Material = Air at 25 C
+      Option = Material Library
+      MORPHOLOGY:
+        Option = Continuous Fluid
+      END
+    END
+    FLUID MODELS:
+      COMBUSTION MODEL:
+        Option = None
+      END
+      HEAT TRANSFER MODEL:
+        Fluid Temperature = 25 [C]
+        Option = Isothermal
+      END
+      THERMAL RADIATION MODEL:
+        Option = None
+      END
+      TURBULENCE MODEL:
+        Option = k epsilon
+      END
+      TURBULENT WALL FUNCTIONS:
+        Option = Scalable
+      END
+    END
+  END
+END
+COMMAND FILE:
+  Results Version = 14.5
+  Version = 17.2
+END

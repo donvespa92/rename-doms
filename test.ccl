@@ -1,0 +1,2590 @@
+
+
+# ----- Domain: FLD_GAS
+
+DOMAIN: FLD_GAS
+		Coord Frame = Coord 0
+		Domain Type = Fluid
+		Location = fld_gas
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Water
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_00
+
+DOMAIN: SLD_AIR_00
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_00
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_01
+
+DOMAIN: SLD_AIR_01
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_01
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_02
+
+DOMAIN: SLD_AIR_02
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_02
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_03
+
+DOMAIN: SLD_AIR_03
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_03
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_04
+
+DOMAIN: SLD_AIR_04
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_04
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_05
+
+DOMAIN: SLD_AIR_05
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_05
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_06
+
+DOMAIN: SLD_AIR_06
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_06
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_07
+
+DOMAIN: SLD_AIR_07
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_07
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_08
+
+DOMAIN: SLD_AIR_08
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_08
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_SENSOR_COVER_1
+
+DOMAIN: SLD_AIR_SENSOR_COVER_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_sensor_cover_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_SENSOR_COVER_2
+
+DOMAIN: SLD_AIR_SENSOR_COVER_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_sensor_cover_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_SENSOR_COVER_3
+
+DOMAIN: SLD_AIR_SENSOR_COVER_3
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_sensor_cover_3
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_AIR_SENSOR_COVER_4
+
+DOMAIN: SLD_AIR_SENSOR_COVER_4
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_air_sensor_cover_4
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_1
+
+DOMAIN: SLD_BEARING_BALL_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_10
+
+DOMAIN: SLD_BEARING_BALL_10
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_10
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_11
+
+DOMAIN: SLD_BEARING_BALL_11
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_11
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_12
+
+DOMAIN: SLD_BEARING_BALL_12
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_12
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_13
+
+DOMAIN: SLD_BEARING_BALL_13
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_13
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_14
+
+DOMAIN: SLD_BEARING_BALL_14
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_14
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_2
+
+DOMAIN: SLD_BEARING_BALL_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_3
+
+DOMAIN: SLD_BEARING_BALL_3
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_3
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_4
+
+DOMAIN: SLD_BEARING_BALL_4
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_4
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_5
+
+DOMAIN: SLD_BEARING_BALL_5
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_5
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_6
+
+DOMAIN: SLD_BEARING_BALL_6
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_6
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_7
+
+DOMAIN: SLD_BEARING_BALL_7
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_7
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_8
+
+DOMAIN: SLD_BEARING_BALL_8
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_8
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_BALL_9
+
+DOMAIN: SLD_BEARING_BALL_9
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_ball_9
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BEARING_HOUSING
+
+DOMAIN: SLD_BEARING_HOUSING
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bearing_housing
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BRACKET_1
+
+DOMAIN: SLD_BRACKET_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bracket_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BRACKET_2
+
+DOMAIN: SLD_BRACKET_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bracket_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BRACKET_FLANGE
+
+DOMAIN: SLD_BRACKET_FLANGE
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bracket_flange
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BUSHING_1
+
+DOMAIN: SLD_BUSHING_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bushing_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_BUSHING_2
+
+DOMAIN: SLD_BUSHING_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_bushing_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_CAP
+
+DOMAIN: SLD_CAP
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_cap
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_CAP_BUSHING
+
+DOMAIN: SLD_CAP_BUSHING
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_cap_bushing
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_DC_MOTOR_1
+
+DOMAIN: SLD_DC_MOTOR_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_dc_motor_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_DC_MOTOR_2
+
+DOMAIN: SLD_DC_MOTOR_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_dc_motor_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_DC_MOTOR_3
+
+DOMAIN: SLD_DC_MOTOR_3
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_dc_motor_3
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_GAS_1
+
+DOMAIN: SLD_GAS_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_gas_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_HOUSING_ACTUATOR
+
+DOMAIN: SLD_HOUSING_ACTUATOR
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_housing_actuator
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_HOUSING_TUBE_MACHINED
+
+DOMAIN: SLD_HOUSING_TUBE_MACHINED
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_housing_tube_machined
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_INSULATION_GLIMMER_BOTTOM
+
+DOMAIN: SLD_INSULATION_GLIMMER_BOTTOM
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_insulation_glimmer_bottom
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_INSULATION_GLIMMER_TOP
+
+DOMAIN: SLD_INSULATION_GLIMMER_TOP
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_insulation_glimmer_top
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_INSULATION_STEEL
+
+DOMAIN: SLD_INSULATION_STEEL
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_insulation_steel
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_LEVER_1
+
+DOMAIN: SLD_LEVER_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_lever_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_LEVER_2
+
+DOMAIN: SLD_LEVER_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_lever_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_NUT_1
+
+DOMAIN: SLD_NUT_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_nut_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_NUT_2
+
+DOMAIN: SLD_NUT_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_nut_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_NUT_3
+
+DOMAIN: SLD_NUT_3
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_nut_3
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_PIN_GAS_1
+
+DOMAIN: SLD_PIN_GAS_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_pin_gas_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_PIN_GAS_2
+
+DOMAIN: SLD_PIN_GAS_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_pin_gas_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_RETAINER
+
+DOMAIN: SLD_RETAINER
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_retainer
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_RETAINER_BUSHING_1
+
+DOMAIN: SLD_RETAINER_BUSHING_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_retainer_bushing_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_RETAINER_BUSHING_2
+
+DOMAIN: SLD_RETAINER_BUSHING_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_retainer_bushing_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_RETAINER_SPRING
+
+DOMAIN: SLD_RETAINER_SPRING
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_retainer_spring
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_ROLLED_BUSHING_PTFE
+
+DOMAIN: SLD_ROLLED_BUSHING_PTFE
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_rolled_bushing_ptfe
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_ROLLED_BUSHING_STEEL
+
+DOMAIN: SLD_ROLLED_BUSHING_STEEL
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_rolled_bushing_steel
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SCREW_1
+
+DOMAIN: SLD_SCREW_1
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_screw_1
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SCREW_2
+
+DOMAIN: SLD_SCREW_2
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_screw_2
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SCREW_3
+
+DOMAIN: SLD_SCREW_3
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_screw_3
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SEALING_FKM
+
+DOMAIN: SLD_SEALING_FKM
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_sealing_fkm
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SEALING_STEEL
+
+DOMAIN: SLD_SEALING_STEEL
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_sealing_steel
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SENSOR_COVER
+
+DOMAIN: SLD_SENSOR_COVER
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_sensor_cover
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SHAFT
+
+DOMAIN: SLD_SHAFT
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_shaft
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SHAFT_OUTPUT
+
+DOMAIN: SLD_SHAFT_OUTPUT
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_shaft_output
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_SPRING
+
+DOMAIN: SLD_SPRING
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_spring
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_VALVE_PLATE
+
+DOMAIN: SLD_VALVE_PLATE
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_valve_plate
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_WASHER
+
+DOMAIN: SLD_WASHER
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_washer
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
+
+
+# ----- Domain: SLD_WASHER_SCRAPER
+
+DOMAIN: SLD_WASHER_SCRAPER
+		Coord Frame = Coord 0
+		Domain Type = Solid
+		Location = sld_washer_scraper
+		
+		DOMAIN MODELS: 
+			DOMAIN MOTION: 
+				Option = Stationary
+			END
+			MESH DEFORMATION: 
+				Option = None
+			END
+		END
+		
+		FLUID DEFINITION: Fluid 1
+			Material = Aluminium
+			Option = Material Library
+			MORPHOLOGY: 
+				Option = Continuous Fluid
+			END
+			END
+			FLUID MODELS: 
+			HEAT TRANSFER MODEL: 
+				Option = Total Energy
+			END
+			THERMAL RADIATION MODEL: 
+				Option = None
+			END
+		END		
+	END
+	
+# -----------------------------------------
+
