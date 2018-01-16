@@ -104,14 +104,35 @@ class AppRenameDoms(tk.Frame):
             return
     
     def cmd_write(self):
-        if os.path.isfile(self.fp.entry_inputfile.get()):
-            
-            return True
-        else:
-            return False
-    
+        self.check_entries()
+        
     def cmd_view(self):
-        pass            
+        pass
+
+    def check_entries(self):
+        self.check = True
+        if not os.path.isfile(self.fp.entry_inputfile.get()):
+            self.check = False
+            print ('Path of inputfile is invalid!')
+            return
+        if not os.path.isdir(os.path.dirname(self.fp.entry_outputfile.get())):
+            self.check = False
+            print ('Path of outputfile is invalid!')
+            return
+        if not self.fp.entry_outputfile:
+            self.check = False
+            print ('Choose the outpufile!')
+            return
+        if not self.tags.entry_tagfluid.get():
+            self.check = False
+            print ('Define tag for fluid domains!')
+            return
+        if not self.tags.entry_tagsolid.get():
+            self.check = False
+            print ('Define tag for solid domains!')
+            return
+
+                        
 
 
 if __name__ == '__main__':
