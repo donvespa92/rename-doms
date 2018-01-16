@@ -3,7 +3,7 @@
 # Material for fluid domains: Water
 # Every other option is set to default
 
-def templates(domtype):
+def templates(name):
     template_domain_solid = """
 
 # ----- Domain: !DOMAIN_NAME! 
@@ -81,10 +81,8 @@ DOMAIN: !DOMAIN_NAME!
 
 """
 
-    if domtype == 'fluid':
-        return template_domain_fluid
-    elif domtype == 'solid':
-        return template_domain_solid
-    else:
-        return False
+    d_template = {'domain_fluid':template_domain_fluid,
+                  'domain_solid':template_domain_solid,}
+    
+    return d_template[name]
 

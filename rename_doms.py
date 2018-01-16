@@ -1,6 +1,6 @@
 import tkinter as tk
 import re
-import template_for_default_domains as template
+import ccl_templates as template
 from tkinter import filedialog
 import os
 
@@ -177,7 +177,7 @@ class AppRenameDoms(tk.Frame):
     def write_ccl_file(self):
         f = open(self.outpufile_fullpath,'w')
         for domain in self.domains_fluid:
-            s = template.templates('fluid')
+            s = template.templates('domain_fluid')
             s = s.replace('!DOMAIN_NAME!',domain.upper())
             s = s.replace('!DOMAIN_TYPE!','Fluid')
             s = s.replace('!DOMAIN_LOCATION!',domain)
@@ -185,7 +185,7 @@ class AppRenameDoms(tk.Frame):
             f.write(s)
 
         for domain in self.domains_solid:
-            s = template.templates('fluid')
+            s = template.templates('domain_solid')
             s = s.replace('!DOMAIN_NAME!',domain.upper())
             s = s.replace('!DOMAIN_TYPE!','Solid')
             s = s.replace('!DOMAIN_LOCATION!',domain)
