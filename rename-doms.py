@@ -20,22 +20,9 @@ class filepaths(tk.Frame):
         self.entry_inputfile = tk.Entry(self.frame_filepaths,width=50)
         self.label_outputfile = tk.Label(self.frame_filepaths,text='Outputfile')
         self.entry_outputfile = tk.Entry(self.frame_filepaths,width=50)
-        
-        self.button_selectinput = tk.Button(
-                self.frame_filepaths,
-                text='Select',
-                command=self.cmd_selectinput)
-        self.button_selectoutput = tk.Button(
-                self.frame_filepaths,
-                text='Select',
-                command=self.cmd_selectoutput)    
-        
-    def cmd_selectinput(self):
-        pass
+        self.button_selectinput = tk.Button(self.frame_filepaths,text='Select')
+        self.button_selectoutput = tk.Button(self.frame_filepaths,text='Select')     
     
-    def cmd_selectoutput(self):
-        pass
-
 class define_tags(tk.Frame):
     def __init__(self,master):       
         tk.Frame.__init__(self,master)
@@ -50,21 +37,12 @@ class define_tags(tk.Frame):
         self.button_write = tk.Button(
                 self.frame_tags,
                 text='Write',
-                height=2,
-                command=self.cmd_write)
+                height=2)
         self.button_view = tk.Button(
                 self.frame_tags,
                 text='View file',
-                height=2,
-                command=self.cmd_view)
-        
-    def cmd_write(self):
-        pass
-    
-    def cmd_view(self):
-        pass
-    
-    
+                height=2)
+             
 class AppRenameDoms(tk.Frame):
     def __init__(self,master):       
         tk.Frame.__init__(self,master)
@@ -88,9 +66,53 @@ class AppRenameDoms(tk.Frame):
         self.tags.entry_tagfluid.grid(row=2,column=1,sticky='NSEW')
         self.tags.label_tagsolid.grid(row=3,column=1,sticky='W') 
         self.tags.entry_tagsolid.grid(row=4,column=1,sticky='NSEW')
-        self.tags.button_write.grid(row=5,column=1,sticky='NSEW',padx=5,pady=5)
-        self.tags.button_view.grid(row=6,column=1,sticky='NSEW',padx=5,pady=5)            
+        self.tags.button_write.grid(row=5,column=1,sticky='NSEW')
+        self.tags.button_view.grid(row=6,column=1,sticky='NSEW')
+        
+        self.fp.button_selectinput.config(command=self.cmd_selectinput)
+        self.fp.button_selectoutput.config(command=self.cmd_selectoutput)
+        self.tags.button_write.config(command=self.cmd_write)
+        self.tags.button_view.config(command=self.cmd_view)
+                
+    def cmd_selectinput(self):
+        selected = tk.filedialog.askopenfilename(
+                title='Choose the .ccl file with default domains',
+                filetypes=(("CFX Command file", "*.ccl"),("All files", "*.*")))
+        
+        if selected:
+            self.inputfile_fullpath = selected
+            self.inputfile_name = os.path.basename(self.inputfile_fullpath)
+            self.inputfile_dir_name = os.path.dirname(self.inputfile_fullpath)
+            self.inputfile_ext = os.path.splitext(self.inputfile_fullpath)[1]
+            
+            self.fp.entry_inputfile.delete(0,'end')
+            self.fp.entry_inputfile.insert(0,selected)
+        else:
+            return
     
+    def cmd_selectoutput(self):
+        selected = filedialog.asksaveasfilename(parent=self.master,
+                                    initialdir=self.inputfile_dir_name,
+                                    title="Selet a file for export",
+                                    filetypes=[('All files', '.*')]) 
+    
+        if selected:
+            self.outpufile_fullpath = selected
+            self.fp.entry_outputfile.delete(0,'end')
+            self.fp.entry_outputfile.insert(0,selected)
+        else:
+            return
+    
+    def cmd_write(self):
+        if os.path.isfile(self.fp.entry_inputfile.get()):
+            
+            return True
+        else:
+            return False
+    
+    def cmd_view(self):
+        pass            
+
 
 if __name__ == '__main__':
     root = tk.Tk()
