@@ -1,14 +1,7 @@
 import tkinter as tk
 import re
 import template_for_default_domains as template
-from tkinter import ttk
 from tkinter import filedialog
-from tkinter.font import Font
-from tkinter import messagebox
-from tkinter import simpledialog
-import shutil
-from shutil import copyfile
-import math
 import os
 
 class filepaths(tk.Frame):
