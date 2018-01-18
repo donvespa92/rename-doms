@@ -27,6 +27,8 @@ class define_tags(tk.Frame):
         self.entry_tagsolid = tk.Entry(self.frame_tags,width=50)
         self.label_tagfluid = tk.Label(self.frame_tags,text='Fluid domain tag')
         self.entry_tagfluid = tk.Entry(self.frame_tags,width=50)
+        self.entry_tagsolid.insert('end','SLD')
+        self.entry_tagfluid.insert('end','FLD')
         
         self.button_write = tk.Button(
                 self.frame_tags,
@@ -67,7 +69,8 @@ class AppRenameDoms(tk.Frame):
         self.fp.button_selectoutput.config(command=self.cmd_selectoutput)
         self.tags.button_write.config(command=self.cmd_write)
         self.tags.button_view.config(command=self.cmd_view)
-                
+        self.tags.button_view.config(state='disabled')
+        
     def cmd_selectinput(self):
         selected = tk.filedialog.askopenfilename(
                 title='Choose the .ccl file with default domains',
@@ -81,6 +84,7 @@ class AppRenameDoms(tk.Frame):
             
             self.fp.entry_inputfile.delete(0,'end')
             self.fp.entry_inputfile.insert(0,selected)
+            self.tags.button_view.config(state='disabled')
         else:
             return
     
@@ -104,14 +108,17 @@ class AppRenameDoms(tk.Frame):
             
             self.read_data_from_ccl()
             self.get_indices()
-            self.get_domain_names()
+            self.get_domain_locations()
             self.get_domain_types()
             self.write_ccl_file()
         else:
             return        
        
     def cmd_view(self):
-        pass
+        if os.path.exists(self.outpufile_fullpath):
+            os.system('notepad.exe %s' % self.outpufile_fullpath)
+        else:
+            return
 
     def check_entries(self):
         if not os.path.isfile(self.fp.entry_inputfile.get()):
@@ -120,10 +127,6 @@ class AppRenameDoms(tk.Frame):
         if not os.path.isdir(os.path.dirname(self.fp.entry_outputfile.get())):
             self.check = False
             print ('Path of outputfile is invalid!')
-            return False
-        if not self.fp.entry_outputfile:
-            self.check = False
-            print ('Choose the outpufile!')
             return False
         if not self.tags.entry_tagfluid.get():
             self.check = False
@@ -140,7 +143,6 @@ class AppRenameDoms(tk.Frame):
         self.inputdata = []
         with open(self.inputfile_fullpath) as f:
             for line in f:
-                
                 self.inputdata.append(line.strip())
     
     def get_indices(self):
@@ -150,35 +152,33 @@ class AppRenameDoms(tk.Frame):
             elif 'BOUNDARY: ' in line:
                 self.lidx = idx
 
-    def get_domain_names(self):
+    def get_domain_locations(self):
         inputdata_cut = self.inputdata[self.fidx:self.lidx]
         joined = ''.join(inputdata_cut)
         joined = joined.replace('\\','')
         joined = joined.split(' = ')[1]
-        self.domains_orig = joined.split(",")
+        self.domains_loc = joined.split(",")
         
     def get_domain_types(self):
         self.domains_fluid = []
         self.domains_solid = []
-        for domain in self.domains_orig:
+        for domain in self.domains_loc:
+            domain = re.sub(r'^\s+','',domain)
             if self.tag_fluid.lower() in domain.lower():
-                if re.search(r'[0-9]{3}$',domain):
-                    domain = domain.split(' ')[0]
-                    self.domains_fluid.append(domain)
-                else:
-                    self.domains_fluid.append(domain)
+                self.domains_fluid.append(domain)
             elif self.tag_solid.lower() in domain.lower():
-                if re.search(r'[0-9]{3}$',domain):
-                    domain = domain.split(' ')[0]
-                    self.domains_solid.append(domain)
-                else:
-                    self.domains_solid.append(domain)
-                
+                self.domains_solid.append(domain)
+              
     def write_ccl_file(self):
         f = open(self.outpufile_fullpath,'w')
+        f.write('FLOW: Flow Analysis 1')
         for domain in self.domains_fluid:
             s = template.templates('domain_fluid')
-            s = s.replace('!DOMAIN_NAME!',domain.upper())
+            if re.search(r'[0-9]{3}$',domain):
+                name = re.sub(r'[0-9]{3}$','',domain)
+                s = s.replace('!DOMAIN_NAME!',name.upper())
+            else:
+                s = s.replace('!DOMAIN_NAME!',domain.upper())
             s = s.replace('!DOMAIN_TYPE!','Fluid')
             s = s.replace('!DOMAIN_LOCATION!',domain)
             s = s.replace('!DOMAIN_MATERIAL!','Water')
@@ -186,14 +186,23 @@ class AppRenameDoms(tk.Frame):
 
         for domain in self.domains_solid:
             s = template.templates('domain_solid')
-            s = s.replace('!DOMAIN_NAME!',domain.upper())
+            if re.search(r'[0-9]{3}$',domain):
+                name = re.sub(r'[0-9]{3}$','',domain)
+                s = s.replace('!DOMAIN_NAME!',name.upper())
+            else:
+                s = s.replace('!DOMAIN_NAME!',domain.upper())
             s = s.replace('!DOMAIN_TYPE!','Solid')
             s = s.replace('!DOMAIN_LOCATION!',domain)
             s = s.replace('!DOMAIN_MATERIAL!','Aluminium')
             f.write(s)
+        f.write('END\nCOMMAND FILE:\n  Version = 18.2\nEND')
         f.close()
-                                                                          
-
+        
+        self.tags.button_view.config(state='normal')
+        tk.messagebox.showinfo('INFO',
+                               'CCL file with the renamed domains is written to the following path:\n%s'
+                               % self.outpufile_fullpath)
+                                                                            
 if __name__ == '__main__':
     root = tk.Tk()
     root.title('Rename domains')

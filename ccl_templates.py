@@ -1,14 +1,11 @@
-# Template file for fluid and solid domains
-# Material for solid domains: Aluminium
-# Material for fluid domains: Water
-# Every other option is set to default
+# Template file for CFX Command Languange
 
 def templates(name):
     template_domain_solid = """
 
 # ----- Domain: !DOMAIN_NAME! 
 
-DOMAIN: !DOMAIN_NAME!
+  DOMAIN: !DOMAIN_NAME!
 		Coord Frame = Coord 0
 		Domain Type = !DOMAIN_TYPE!
 		Location = !DOMAIN_LOCATION!
@@ -37,7 +34,7 @@ DOMAIN: !DOMAIN_NAME!
 				Option = None
 			END
 		END		
-	END
+  END
 # -----------------------------------------
 
 """
@@ -46,7 +43,7 @@ DOMAIN: !DOMAIN_NAME!
 
 # ----- Domain: !DOMAIN_NAME!
 
-DOMAIN: !DOMAIN_NAME!
+  DOMAIN: !DOMAIN_NAME!
 		Coord Frame = Coord 0
 		Domain Type = !DOMAIN_TYPE!
 		Location = !DOMAIN_LOCATION!
@@ -75,14 +72,43 @@ DOMAIN: !DOMAIN_NAME!
 				Option = None
 			END
 		END		
-	END
+  END
 	
 # -----------------------------------------
 
 """
 
+    template_domain_interface ="""
+
+FLOW: Flow Analysis 1
+&replace DOMAIN INTERFACE: !INTERFACE_NAME!
+Boundary List1 = !SIDE1!
+Boundary List2 = !SIDE2!
+    Filter Domain List1 = !DOM1!
+    Filter Domain List2 = !DOM2!
+    Interface Region List1 = !BND1!
+    Interface Region List2 = !BND2!
+    Interface Type = !IF_TYPE!
+    INTERFACE MODELS:
+      Option = General Connection
+      FRAME CHANGE:
+        Option = None
+      END
+      PITCH CHANGE:
+        Option = None
+      END
+    END
+    MESH CONNECTION:
+      Option = Automatic
+    END
+  END
+END   
+    
+"""
+
     d_template = {'domain_fluid':template_domain_fluid,
-                  'domain_solid':template_domain_solid,}
+                  'domain_solid':template_domain_solid,
+                  'domain_interface':template_domain_interface}
     
     return d_template[name]
 
